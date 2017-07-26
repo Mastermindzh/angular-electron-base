@@ -16,7 +16,7 @@
 
 # misc
 /typings
-*lock.json
+package-lock.json
 
 #System Files
 .DS_Store

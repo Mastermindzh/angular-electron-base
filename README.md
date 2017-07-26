@@ -11,7 +11,7 @@ To run the entire project in dev mode for the first time use:
 - `npm run dev`
 
 ## Theming
-I plan on making branches for bootstrap and material design later. Haven't done it yet though.
+This branch includes angular material.
 
 ## npm run commands
 This project includes several useful (required) npm commands, all of these can be run with: `npm run command`

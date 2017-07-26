@@ -1,9 +1,11 @@
-import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NgModule } from '@angular/core';
-import { NgxElectronModule } from 'ngx-electron';
+import { MaterialModule } from '@angular/material';
+import { NgxElectronModule} from 'ngx-electron';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { NgxElectronModule } from 'ngx-electron';
     NgxElectronModule,
     FormsModule,
     HttpModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

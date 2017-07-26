@@ -1,0 +1,50 @@
+{
+  "name": "angular-electron-base",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Rick van Lieshout <info@rickvanlieshout.com> (//mastermindzh.com)",
+  "angular-cli": {},
+  "scripts": {
+    "dev": "npm run ng-build && npm run add-electron && npm run electron-run",
+    "webdev": "ng serve --base-href",
+    "build": "npm run ng-build-prod && npm run add-electron && npm run package-prep",
+    "start": "npm run build && npm run electron-run",
+    "package": "npm run package-windows && npm run package-mac && npm run package-linux",
+    "package-windows": "electron-packager dist --overwrite --platform=win32 --arch=ia32 --icon=dist/assets/icon/icon.ico --tmpdir .tmp --out=release-builds --version-string.CompanyName=Company --version-string.FileDescription=Angular-Electron-app --version-string.ProductName=\"angular-material-electron-base\"",
+    "package-mac": "electron-packager dist --overwrite --platform=darwin --arch=x64 --icon=dist/assets/icon/icon.png.icns --out=release-builds",
+    "package-linux": "electron-packager dist --overwrite --platform=linux --arch=x64 --icon=dist/assets/icon/icon.png --tmpdir .tmp --out=release-builds",
+    "add-electron": "node ./copyPackageJson.js && cp -r src/electron/* dist ",
+    "electron-run": "electron --enable-logging dist",
+    "package-prep": "cd dist && npm install && cd ..",
+    "ng-build-prod": "ng build --base-href --env=prod .",
+    "ng-build": "ng build --base-href .",
+    "dev-windows": "npm run ng-build && npm run add-electron-windows && npm run electron-run",
+    "build-windows": "npm run ng-build-prod && npm run add-electron-windows && npm run package-prep",
+    "add-electron-windows": "node .\\copyPackageJson.js && (robocopy .\\src\\electron\\ .\\dist\\ /s /e) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^4.3.1",
+    "@angular/compiler": "^4.3.1",
+    "@angular/core": "^4.3.1",
+    "@angular/forms": "^4.3.1",
+    "@angular/http": "^4.3.1",
+    "@angular/platform-browser": "^4.3.1",
+    "@angular/platform-browser-dynamic": "^4.3.1",
+    "@angular/router": "^4.3.1",
+    "core-js": "^2.4.1",
+    "electron": "1.6.11",
+    "ngx-electron": "^1.0.3",
+    "node-notifier": "^5.1.2",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.0.0-rc.2",
+    "@angular/compiler-cli": "4.0.2",
+    "@types/node": "~6.0.60",
+    "electron-packager": "^8.7.2",
+    "ts-node": "~2.0.0",
+    "typescript": "~2.4.2"
+  }
+}

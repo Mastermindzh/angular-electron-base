@@ -4,6 +4,12 @@ It includes all the commands necessary to take the app from development straight
 
 *An example which sends native system notifications by calling an Angular method is included as well.*
 
+## Quickstart
+To run the entire project in dev mode for the first time use:
+
+- `npm install`
+- `npm run dev`
+
 ## Theming
 I plan on making branches for bootstrap and material design later. Haven't done it yet though.
 
@@ -25,8 +31,9 @@ This project includes several useful (required) npm commands, all of these can b
 
 ### Additional ("internal") commands called by previous commands
 These commands ***can*** be called by the user but are mainly used by the commands above.
-| Command              | Function                                                                                                     |
-|----------------------|--------------------------------------------------------------------------------------------------------------|
+
+| Command         | Function                                                                          |
+|-----------------|-----------------------------------------------------------------------------------|
 | add-electron         | Runs a script which will create a package.json and copy all electron sources to the dist folder              |
 | add-electron-windows | Exactly the same as the "add-electron" command but for Windows                                               |
 | electron-run         | Runs electron with logging enabled                                                                           |

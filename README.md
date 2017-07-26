@@ -11,7 +11,10 @@ To run the entire project in dev mode for the first time use:
 - `npm run dev`
 
 ## Theming
-I plan on making branches for bootstrap and material design later. Haven't done it yet though.
+I plan on making several branches of this base with several theming options applied. The ones I'm planning on doing, and the ones I've done, can be found below.
+
+- [Material Design](https://github.com/Mastermindzh/angular-electron-base/tree/material)
+- Bootstrap
 
 ## npm run commands
 This project includes several useful (required) npm commands, all of these can be run with: `npm run command`
@@ -68,7 +71,7 @@ Use the following command to fix that:
 ## add-electron-Windows
 `(robocopy .\\src\\electron\\ .\\dist\\  *.*) ^& IF %ERRORLEVEL% LEQ 1 exit 0`
 
-This command looks weird and might require some explanation...
+This command looks weird and might require an explanation...
 
 "Robocopy" is the "[Robust copy tool](https://technet.microsoft.com/en-us/library/cc733145(v=ws.11).aspx)" in Windows. (copy and xcopy apparantly perform abysmal)
 

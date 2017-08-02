@@ -11,14 +11,7 @@ To run the entire project in dev mode for the first time use:
 - `npm run dev`
 
 ## Theming
-<<<<<<< HEAD
 This branch includes angular material.
-=======
-I plan on making several branches of this base with several theming options applied. The ones I'm planning on doing, and the ones I've done, can be found below.
-
-- [Material Design](https://github.com/Mastermindzh/angular-electron-base/tree/material)
-- Bootstrap
->>>>>>> e0b844a044846e67e7d638b439c8656cede6e821
 
 ## npm run commands
 This project includes several useful (required) npm commands, all of these can be run with: `npm run command`

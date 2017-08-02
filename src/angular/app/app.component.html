@@ -1,8 +1,20 @@
-<h1>
-  Hello Angular!
-</h1>
-<span>{{message}}</span>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+  <a class="navbar-brand" href="">Angular-electron-bootstrap</a>
+</nav>
 
-<p>Click the button to send a node-notifier notification on Electron</p>
-<button (click)="onClickMe()" md-raised-button color="primary">Click me!</button>
-<button (click)="devTools()" md-raised-button color="accent">Open dev tools!</button>
+<div class="container">
+
+  <alert dismissible="true" type="success">hello</alert>
+
+  <div class="jumbotron">
+    <h1>
+      Hello Angular!
+    </h1>
+    <span>{{message}}</span>
+  </div>
+
+  <div class="center-block text-center">
+    <p>Click the button to send a node-notifier notification on Electron</p>
+    <button class="btn btn-success" (click)="onClickMe()">Click me!</button>
+    <button class="btn btn-warning" (click)="devTools()">Open dev tools!</button>
+  </div>

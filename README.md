@@ -4,6 +4,8 @@ It includes all the commands necessary to take the app from development straight
 
 *An example which sends native system notifications by calling an Angular method is included as well.*
 
+![image of the bootstrap app](https://i.imgur.com/dSDR42M.png)
+
 ## Quickstart
 To run the entire project in dev mode for the first time use:
 
